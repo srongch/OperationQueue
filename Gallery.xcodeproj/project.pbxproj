@@ -1,0 +1,773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D1267DFA2447622500CCDB0A /* LoadImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1267DF92447622500CCDB0A /* LoadImageOperation.swift */; };
+		D1267DFC2448F1EA00CCDB0A /* DownsamplingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1267DFB2448F1E900CCDB0A /* DownsamplingOperation.swift */; };
+		D1267DFE2448F41100CCDB0A /* ImageDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1267DFD2448F41100CCDB0A /* ImageDataProvider.swift */; };
+		D1267E002448F52600CCDB0A /* Downsampling.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1267DFF2448F52600CCDB0A /* Downsampling.swift */; };
+		D157DE842445B21E003FFA57 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D157DE832445B21E003FFA57 /* ImageCell.swift */; };
+		D15A2337244E4FD4003369AB /* FileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15A2336244E4FD4003369AB /* FileItem.swift */; };
+		D15A2355244E5FEB003369AB /* hintersee-2928745.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D15A233A244E5FE8003369AB /* hintersee-2928745.jpg */; };
+		D15A2356244E5FEB003369AB /* panorama-3519309.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D15A233B244E5FE9003369AB /* panorama-3519309.jpg */; };
+		D15A2357244E5FEB003369AB /* kristin-4423710.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D15A233C244E5FE9003369AB /* kristin-4423710.jpg */; };
+		D15A2358244E5FEB003369AB /* befreiungshalle-2646148.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D15A233D244E5FE9003369AB /* befreiungshalle-2646148.jpg */; };
+		D15A2359244E5FEB003369AB /* hut-2308334.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D15A233E244E5FE9003369AB /* hut-2308334.jpg */; };
+		D15A235A244E5FEB003369AB /* chain-bridge-111326.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D15A233F244E5FE9003369AB /* chain-bridge-111326.jpg */; };
+		D15A235B244E5FEB003369AB /* sonnenstern-2776960.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D15A2340244E5FE9003369AB /* sonnenstern-2776960.jpg */; };
+		D15A235C244E5FEB003369AB /* water-2595885.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D15A2341244E5FE9003369AB /* water-2595885.jpg */; };
+		D15A235D244E5FEB003369AB /* hochosterwitz-4423671.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D15A2342244E5FE9003369AB /* hochosterwitz-4423671.jpg */; };
+		D15A235E244E5FEB003369AB /* konigssee-2928755.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D15A2343244E5FE9003369AB /* konigssee-2928755.jpg */; };
+		D15A235F244E5FEB003369AB /* mountain-2806180.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D15A2344244E5FE9003369AB /* mountain-2806180.jpg */; };
+		D15A2360244E5FEB003369AB /* sunset-2440669.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D15A2345244E5FE9003369AB /* sunset-2440669.jpg */; };
+		D15A2361244E5FEB003369AB /* panorama-2552961.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D15A2346244E5FE9003369AB /* panorama-2552961.tiff */; };
+		D15A2362244E5FEB003369AB /* lake-2491953.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D15A2347244E5FE9003369AB /* lake-2491953.jpg */; };
+		D15A2363244E5FEB003369AB /* panorama-2552961.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D15A2348244E5FEA003369AB /* panorama-2552961.jpg */; };
+		D15A2364244E5FEB003369AB /* abendstimmung-2639064.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D15A2349244E5FEA003369AB /* abendstimmung-2639064.jpg */; };
+		D15A2365244E5FEB003369AB /* prague-3540876.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D15A234A244E5FEA003369AB /* prague-3540876.jpg */; };
+		D15A2366244E5FEB003369AB /* cesky-krumlov-3557917.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D15A234B244E5FEA003369AB /* cesky-krumlov-3557917.jpg */; };
+		D15A2367244E5FEB003369AB /* bike-2756269.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D15A234C244E5FEA003369AB /* bike-2756269.jpg */; };
+		D15A2368244E5FEB003369AB /* berchtesgaden-3625654.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D15A234D244E5FEA003369AB /* berchtesgaden-3625654.jpg */; };
+		D15A2369244E5FEB003369AB /* city_lights_africa_night_8k.tif in Resources */ = {isa = PBXBuildFile; fileRef = D15A234E244E5FEA003369AB /* city_lights_africa_night_8k.tif */; };
+		D15A236A244E5FEB003369AB /* berlin-cathedral-2463225.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D15A234F244E5FEA003369AB /* berlin-cathedral-2463225.jpg */; };
+		D15A236B244E5FEB003369AB /* ebersberg-2848774.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D15A2350244E5FEB003369AB /* ebersberg-2848774.jpg */; };
+		D15A236C244E5FEB003369AB /* sunrise-4423676.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D15A2351244E5FEB003369AB /* sunrise-4423676.jpg */; };
+		D15A236D244E5FEB003369AB /* schynige-platte-4423704.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D15A2352244E5FEB003369AB /* schynige-platte-4423704.jpg */; };
+		D15A236E244E5FEB003369AB /* file_example_TIFF_10MB.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D15A2353244E5FEB003369AB /* file_example_TIFF_10MB.tiff */; };
+		D15A236F244E5FEB003369AB /* sunset-2527534.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D15A2354244E5FEB003369AB /* sunset-2527534.jpg */; };
+		D1A98E592445B9DA008D6AAA /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A98E582445B9DA008D6AAA /* GalleryViewModel.swift */; };
+		D1A98E5B2445FD1E008D6AAA /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A98E5A2445FD1E008D6AAA /* FileManager.swift */; };
+		D1FE75E52443CD3E001E133D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE75E42443CD3E001E133D /* AppDelegate.swift */; };
+		D1FE75E72443CD3E001E133D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE75E62443CD3E001E133D /* SceneDelegate.swift */; };
+		D1FE75E92443CD3E001E133D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE75E82443CD3E001E133D /* ViewController.swift */; };
+		D1FE75EC2443CD3E001E133D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1FE75EA2443CD3E001E133D /* Main.storyboard */; };
+		D1FE75EE2443CD43001E133D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1FE75ED2443CD43001E133D /* Assets.xcassets */; };
+		D1FE75F12443CD43001E133D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1FE75EF2443CD43001E133D /* LaunchScreen.storyboard */; };
+		D1FE75FC2443CD43001E133D /* GalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE75FB2443CD43001E133D /* GalleryTests.swift */; };
+		D1FE76072443CD43001E133D /* GalleryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE76062443CD43001E133D /* GalleryUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D1FE75F82443CD43001E133D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1FE75D92443CD3E001E133D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1FE75E02443CD3E001E133D;
+			remoteInfo = Gallery;
+		};
+		D1FE76032443CD43001E133D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1FE75D92443CD3E001E133D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1FE75E02443CD3E001E133D;
+			remoteInfo = Gallery;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D1267DF92447622500CCDB0A /* LoadImageOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImageOperation.swift; sourceTree = "<group>"; };
+		D1267DFB2448F1E900CCDB0A /* DownsamplingOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownsamplingOperation.swift; sourceTree = "<group>"; };
+		D1267DFD2448F41100CCDB0A /* ImageDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataProvider.swift; sourceTree = "<group>"; };
+		D1267DFF2448F52600CCDB0A /* Downsampling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downsampling.swift; sourceTree = "<group>"; };
+		D157DE832445B21E003FFA57 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		D15A2336244E4FD4003369AB /* FileItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileItem.swift; sourceTree = "<group>"; };
+		D15A233A244E5FE8003369AB /* hintersee-2928745.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hintersee-2928745.jpg"; sourceTree = "<group>"; };
+		D15A233B244E5FE9003369AB /* panorama-3519309.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "panorama-3519309.jpg"; sourceTree = "<group>"; };
+		D15A233C244E5FE9003369AB /* kristin-4423710.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kristin-4423710.jpg"; sourceTree = "<group>"; };
+		D15A233D244E5FE9003369AB /* befreiungshalle-2646148.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "befreiungshalle-2646148.jpg"; sourceTree = "<group>"; };
+		D15A233E244E5FE9003369AB /* hut-2308334.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hut-2308334.jpg"; sourceTree = "<group>"; };
+		D15A233F244E5FE9003369AB /* chain-bridge-111326.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "chain-bridge-111326.jpg"; sourceTree = "<group>"; };
+		D15A2340244E5FE9003369AB /* sonnenstern-2776960.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sonnenstern-2776960.jpg"; sourceTree = "<group>"; };
+		D15A2341244E5FE9003369AB /* water-2595885.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "water-2595885.jpg"; sourceTree = "<group>"; };
+		D15A2342244E5FE9003369AB /* hochosterwitz-4423671.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hochosterwitz-4423671.jpg"; sourceTree = "<group>"; };
+		D15A2343244E5FE9003369AB /* konigssee-2928755.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "konigssee-2928755.jpg"; sourceTree = "<group>"; };
+		D15A2344244E5FE9003369AB /* mountain-2806180.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mountain-2806180.jpg"; sourceTree = "<group>"; };
+		D15A2345244E5FE9003369AB /* sunset-2440669.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sunset-2440669.jpg"; sourceTree = "<group>"; };
+		D15A2346244E5FE9003369AB /* panorama-2552961.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "panorama-2552961.tiff"; sourceTree = "<group>"; };
+		D15A2347244E5FE9003369AB /* lake-2491953.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lake-2491953.jpg"; sourceTree = "<group>"; };
+		D15A2348244E5FEA003369AB /* panorama-2552961.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "panorama-2552961.jpg"; sourceTree = "<group>"; };
+		D15A2349244E5FEA003369AB /* abendstimmung-2639064.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "abendstimmung-2639064.jpg"; sourceTree = "<group>"; };
+		D15A234A244E5FEA003369AB /* prague-3540876.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "prague-3540876.jpg"; sourceTree = "<group>"; };
+		D15A234B244E5FEA003369AB /* cesky-krumlov-3557917.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cesky-krumlov-3557917.jpg"; sourceTree = "<group>"; };
+		D15A234C244E5FEA003369AB /* bike-2756269.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bike-2756269.jpg"; sourceTree = "<group>"; };
+		D15A234D244E5FEA003369AB /* berchtesgaden-3625654.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "berchtesgaden-3625654.jpg"; sourceTree = "<group>"; };
+		D15A234E244E5FEA003369AB /* city_lights_africa_night_8k.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = city_lights_africa_night_8k.tif; sourceTree = "<group>"; };
+		D15A234F244E5FEA003369AB /* berlin-cathedral-2463225.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "berlin-cathedral-2463225.jpg"; sourceTree = "<group>"; };
+		D15A2350244E5FEB003369AB /* ebersberg-2848774.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ebersberg-2848774.jpg"; sourceTree = "<group>"; };
+		D15A2351244E5FEB003369AB /* sunrise-4423676.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sunrise-4423676.jpg"; sourceTree = "<group>"; };
+		D15A2352244E5FEB003369AB /* schynige-platte-4423704.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "schynige-platte-4423704.jpg"; sourceTree = "<group>"; };
+		D15A2353244E5FEB003369AB /* file_example_TIFF_10MB.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = file_example_TIFF_10MB.tiff; sourceTree = "<group>"; };
+		D15A2354244E5FEB003369AB /* sunset-2527534.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sunset-2527534.jpg"; sourceTree = "<group>"; };
+		D1A98E582445B9DA008D6AAA /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
+		D1A98E5A2445FD1E008D6AAA /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		D1FE75E12443CD3E001E133D /* Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1FE75E42443CD3E001E133D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D1FE75E62443CD3E001E133D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D1FE75E82443CD3E001E133D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D1FE75EB2443CD3E001E133D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D1FE75ED2443CD43001E133D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1FE75F02443CD43001E133D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D1FE75F22443CD43001E133D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1FE75F72443CD43001E133D /* GalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1FE75FB2443CD43001E133D /* GalleryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTests.swift; sourceTree = "<group>"; };
+		D1FE75FD2443CD43001E133D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1FE76022443CD43001E133D /* GalleryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GalleryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1FE76062443CD43001E133D /* GalleryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryUITests.swift; sourceTree = "<group>"; };
+		D1FE76082443CD43001E133D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1FE75DE2443CD3E001E133D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1FE75F42443CD43001E133D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1FE75FF2443CD43001E133D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D15A2333244E4F7E003369AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D157DE832445B21E003FFA57 /* ImageCell.swift */,
+				D1FE75E82443CD3E001E133D /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D15A2334244E4F88003369AB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D1A98E582445B9DA008D6AAA /* GalleryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D15A2335244E4F97003369AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D15A2336244E4FD4003369AB /* FileItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D15A2338244E4FEF003369AB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D1A98E5A2445FD1E008D6AAA /* FileManager.swift */,
+				D1267DF92447622500CCDB0A /* LoadImageOperation.swift */,
+				D1267DFB2448F1E900CCDB0A /* DownsamplingOperation.swift */,
+				D1267DFF2448F52600CCDB0A /* Downsampling.swift */,
+				D1267DFD2448F41100CCDB0A /* ImageDataProvider.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D15A2339244E5FCE003369AB /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				D15A2349244E5FEA003369AB /* abendstimmung-2639064.jpg */,
+				D15A233D244E5FE9003369AB /* befreiungshalle-2646148.jpg */,
+				D15A234D244E5FEA003369AB /* berchtesgaden-3625654.jpg */,
+				D15A234F244E5FEA003369AB /* berlin-cathedral-2463225.jpg */,
+				D15A234C244E5FEA003369AB /* bike-2756269.jpg */,
+				D15A234B244E5FEA003369AB /* cesky-krumlov-3557917.jpg */,
+				D15A233F244E5FE9003369AB /* chain-bridge-111326.jpg */,
+				D15A234E244E5FEA003369AB /* city_lights_africa_night_8k.tif */,
+				D15A2350244E5FEB003369AB /* ebersberg-2848774.jpg */,
+				D15A2353244E5FEB003369AB /* file_example_TIFF_10MB.tiff */,
+				D15A233A244E5FE8003369AB /* hintersee-2928745.jpg */,
+				D15A2342244E5FE9003369AB /* hochosterwitz-4423671.jpg */,
+				D15A233E244E5FE9003369AB /* hut-2308334.jpg */,
+				D15A2343244E5FE9003369AB /* konigssee-2928755.jpg */,
+				D15A233C244E5FE9003369AB /* kristin-4423710.jpg */,
+				D15A2347244E5FE9003369AB /* lake-2491953.jpg */,
+				D15A2344244E5FE9003369AB /* mountain-2806180.jpg */,
+				D15A2348244E5FEA003369AB /* panorama-2552961.jpg */,
+				D15A2346244E5FE9003369AB /* panorama-2552961.tiff */,
+				D15A233B244E5FE9003369AB /* panorama-3519309.jpg */,
+				D15A234A244E5FEA003369AB /* prague-3540876.jpg */,
+				D15A2352244E5FEB003369AB /* schynige-platte-4423704.jpg */,
+				D15A2340244E5FE9003369AB /* sonnenstern-2776960.jpg */,
+				D15A2351244E5FEB003369AB /* sunrise-4423676.jpg */,
+				D15A2345244E5FE9003369AB /* sunset-2440669.jpg */,
+				D15A2354244E5FEB003369AB /* sunset-2527534.jpg */,
+				D15A2341244E5FE9003369AB /* water-2595885.jpg */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		D1FE75D82443CD3E001E133D = {
+			isa = PBXGroup;
+			children = (
+				D1FE75E32443CD3E001E133D /* Gallery */,
+				D1FE75FA2443CD43001E133D /* GalleryTests */,
+				D1FE76052443CD43001E133D /* GalleryUITests */,
+				D1FE75E22443CD3E001E133D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D1FE75E22443CD3E001E133D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1FE75E12443CD3E001E133D /* Gallery.app */,
+				D1FE75F72443CD43001E133D /* GalleryTests.xctest */,
+				D1FE76022443CD43001E133D /* GalleryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1FE75E32443CD3E001E133D /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				D15A2339244E5FCE003369AB /* Sample */,
+				D15A2335244E4F97003369AB /* Model */,
+				D15A2334244E4F88003369AB /* ViewModel */,
+				D15A2333244E4F7E003369AB /* View */,
+				D1FE75E42443CD3E001E133D /* AppDelegate.swift */,
+				D1FE75E62443CD3E001E133D /* SceneDelegate.swift */,
+				D1FE75EA2443CD3E001E133D /* Main.storyboard */,
+				D1FE75ED2443CD43001E133D /* Assets.xcassets */,
+				D1FE75EF2443CD43001E133D /* LaunchScreen.storyboard */,
+				D1FE75F22443CD43001E133D /* Info.plist */,
+				D15A2338244E4FEF003369AB /* Services */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		D1FE75FA2443CD43001E133D /* GalleryTests */ = {
+			isa = PBXGroup;
+			children = (
+				D1FE75FB2443CD43001E133D /* GalleryTests.swift */,
+				D1FE75FD2443CD43001E133D /* Info.plist */,
+			);
+			path = GalleryTests;
+			sourceTree = "<group>";
+		};
+		D1FE76052443CD43001E133D /* GalleryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D1FE76062443CD43001E133D /* GalleryUITests.swift */,
+				D1FE76082443CD43001E133D /* Info.plist */,
+			);
+			path = GalleryUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1FE75E02443CD3E001E133D /* Gallery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1FE760B2443CD43001E133D /* Build configuration list for PBXNativeTarget "Gallery" */;
+			buildPhases = (
+				D1FE75DD2443CD3E001E133D /* Sources */,
+				D1FE75DE2443CD3E001E133D /* Frameworks */,
+				D1FE75DF2443CD3E001E133D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gallery;
+			productName = Gallery;
+			productReference = D1FE75E12443CD3E001E133D /* Gallery.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D1FE75F62443CD43001E133D /* GalleryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1FE760E2443CD43001E133D /* Build configuration list for PBXNativeTarget "GalleryTests" */;
+			buildPhases = (
+				D1FE75F32443CD43001E133D /* Sources */,
+				D1FE75F42443CD43001E133D /* Frameworks */,
+				D1FE75F52443CD43001E133D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1FE75F92443CD43001E133D /* PBXTargetDependency */,
+			);
+			name = GalleryTests;
+			productName = GalleryTests;
+			productReference = D1FE75F72443CD43001E133D /* GalleryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D1FE76012443CD43001E133D /* GalleryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1FE76112443CD43001E133D /* Build configuration list for PBXNativeTarget "GalleryUITests" */;
+			buildPhases = (
+				D1FE75FE2443CD43001E133D /* Sources */,
+				D1FE75FF2443CD43001E133D /* Frameworks */,
+				D1FE76002443CD43001E133D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1FE76042443CD43001E133D /* PBXTargetDependency */,
+			);
+			name = GalleryUITests;
+			productName = GalleryUITests;
+			productReference = D1FE76022443CD43001E133D /* GalleryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1FE75D92443CD3E001E133D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Sronglong;
+				TargetAttributes = {
+					D1FE75E02443CD3E001E133D = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					D1FE75F62443CD43001E133D = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = D1FE75E02443CD3E001E133D;
+					};
+					D1FE76012443CD43001E133D = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = D1FE75E02443CD3E001E133D;
+					};
+				};
+			};
+			buildConfigurationList = D1FE75DC2443CD3E001E133D /* Build configuration list for PBXProject "Gallery" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1FE75D82443CD3E001E133D;
+			productRefGroup = D1FE75E22443CD3E001E133D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1FE75E02443CD3E001E133D /* Gallery */,
+				D1FE75F62443CD43001E133D /* GalleryTests */,
+				D1FE76012443CD43001E133D /* GalleryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1FE75DF2443CD3E001E133D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D15A2368244E5FEB003369AB /* berchtesgaden-3625654.jpg in Resources */,
+				D15A2367244E5FEB003369AB /* bike-2756269.jpg in Resources */,
+				D15A235C244E5FEB003369AB /* water-2595885.jpg in Resources */,
+				D1FE75F12443CD43001E133D /* LaunchScreen.storyboard in Resources */,
+				D15A2355244E5FEB003369AB /* hintersee-2928745.jpg in Resources */,
+				D15A235E244E5FEB003369AB /* konigssee-2928755.jpg in Resources */,
+				D1FE75EE2443CD43001E133D /* Assets.xcassets in Resources */,
+				D15A235A244E5FEB003369AB /* chain-bridge-111326.jpg in Resources */,
+				D15A236F244E5FEB003369AB /* sunset-2527534.jpg in Resources */,
+				D15A2361244E5FEB003369AB /* panorama-2552961.tiff in Resources */,
+				D15A2362244E5FEB003369AB /* lake-2491953.jpg in Resources */,
+				D15A236C244E5FEB003369AB /* sunrise-4423676.jpg in Resources */,
+				D15A2366244E5FEB003369AB /* cesky-krumlov-3557917.jpg in Resources */,
+				D15A236D244E5FEB003369AB /* schynige-platte-4423704.jpg in Resources */,
+				D15A2369244E5FEB003369AB /* city_lights_africa_night_8k.tif in Resources */,
+				D15A236A244E5FEB003369AB /* berlin-cathedral-2463225.jpg in Resources */,
+				D15A235D244E5FEB003369AB /* hochosterwitz-4423671.jpg in Resources */,
+				D15A2363244E5FEB003369AB /* panorama-2552961.jpg in Resources */,
+				D15A2359244E5FEB003369AB /* hut-2308334.jpg in Resources */,
+				D15A236B244E5FEB003369AB /* ebersberg-2848774.jpg in Resources */,
+				D15A236E244E5FEB003369AB /* file_example_TIFF_10MB.tiff in Resources */,
+				D15A2364244E5FEB003369AB /* abendstimmung-2639064.jpg in Resources */,
+				D1FE75EC2443CD3E001E133D /* Main.storyboard in Resources */,
+				D15A2358244E5FEB003369AB /* befreiungshalle-2646148.jpg in Resources */,
+				D15A235F244E5FEB003369AB /* mountain-2806180.jpg in Resources */,
+				D15A2365244E5FEB003369AB /* prague-3540876.jpg in Resources */,
+				D15A235B244E5FEB003369AB /* sonnenstern-2776960.jpg in Resources */,
+				D15A2357244E5FEB003369AB /* kristin-4423710.jpg in Resources */,
+				D15A2356244E5FEB003369AB /* panorama-3519309.jpg in Resources */,
+				D15A2360244E5FEB003369AB /* sunset-2440669.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1FE75F52443CD43001E133D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1FE76002443CD43001E133D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1FE75DD2443CD3E001E133D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1267DFC2448F1EA00CCDB0A /* DownsamplingOperation.swift in Sources */,
+				D15A2337244E4FD4003369AB /* FileItem.swift in Sources */,
+				D1FE75E92443CD3E001E133D /* ViewController.swift in Sources */,
+				D1267E002448F52600CCDB0A /* Downsampling.swift in Sources */,
+				D1A98E592445B9DA008D6AAA /* GalleryViewModel.swift in Sources */,
+				D157DE842445B21E003FFA57 /* ImageCell.swift in Sources */,
+				D1A98E5B2445FD1E008D6AAA /* FileManager.swift in Sources */,
+				D1267DFE2448F41100CCDB0A /* ImageDataProvider.swift in Sources */,
+				D1267DFA2447622500CCDB0A /* LoadImageOperation.swift in Sources */,
+				D1FE75E52443CD3E001E133D /* AppDelegate.swift in Sources */,
+				D1FE75E72443CD3E001E133D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1FE75F32443CD43001E133D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1FE75FC2443CD43001E133D /* GalleryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1FE75FE2443CD43001E133D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1FE76072443CD43001E133D /* GalleryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1FE75F92443CD43001E133D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1FE75E02443CD3E001E133D /* Gallery */;
+			targetProxy = D1FE75F82443CD43001E133D /* PBXContainerItemProxy */;
+		};
+		D1FE76042443CD43001E133D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1FE75E02443CD3E001E133D /* Gallery */;
+			targetProxy = D1FE76032443CD43001E133D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D1FE75EA2443CD3E001E133D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1FE75EB2443CD3E001E133D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D1FE75EF2443CD43001E133D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1FE75F02443CD43001E133D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1FE76092443CD43001E133D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D1FE760A2443CD43001E133D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1FE760C2443CD43001E133D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VH8R5WZUX;
+				INFOPLIST_FILE = Gallery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xzy.sronglong.Gallery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D1FE760D2443CD43001E133D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VH8R5WZUX;
+				INFOPLIST_FILE = Gallery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xzy.sronglong.Gallery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D1FE760F2443CD43001E133D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GalleryTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xzy.sronglong.GalleryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gallery.app/Gallery";
+			};
+			name = Debug;
+		};
+		D1FE76102443CD43001E133D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GalleryTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xzy.sronglong.GalleryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gallery.app/Gallery";
+			};
+			name = Release;
+		};
+		D1FE76122443CD43001E133D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GalleryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xzy.sronglong.GalleryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gallery;
+			};
+			name = Debug;
+		};
+		D1FE76132443CD43001E133D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GalleryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xzy.sronglong.GalleryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gallery;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1FE75DC2443CD3E001E133D /* Build configuration list for PBXProject "Gallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1FE76092443CD43001E133D /* Debug */,
+				D1FE760A2443CD43001E133D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1FE760B2443CD43001E133D /* Build configuration list for PBXNativeTarget "Gallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1FE760C2443CD43001E133D /* Debug */,
+				D1FE760D2443CD43001E133D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1FE760E2443CD43001E133D /* Build configuration list for PBXNativeTarget "GalleryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1FE760F2443CD43001E133D /* Debug */,
+				D1FE76102443CD43001E133D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1FE76112443CD43001E133D /* Build configuration list for PBXNativeTarget "GalleryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1FE76122443CD43001E133D /* Debug */,
+				D1FE76132443CD43001E133D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1FE75D92443CD3E001E133D /* Project object */;
+}
